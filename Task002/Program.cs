@@ -10,11 +10,11 @@ int M  = int.Parse(Console.ReadLine()!);
 Console.Write("Введи число N: ");
 int N  = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine(PrintNumbers(M,N));
+Console.WriteLine(SumElements(M,N));
 
 // ------------------Method------------------
-int PrintNumbers(int M, int N)
+int SumElements(int M, int N)
 {
     if (M == N) return N;
-    return (M + PrintNumbers(M + 1, N));
+    return (M + SumElements(M + 1, N));
 }
